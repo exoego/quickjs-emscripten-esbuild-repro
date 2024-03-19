@@ -3,8 +3,8 @@ import esbuild from 'esbuild';
 
 await esbuild.build({
     entryPoints: ["src/lambda.ts"],
-    outfile: "dist/index.mjs",
-    format: "esm",
+    outfile: "dist/index.js",
+
     plugins: [metaUrlPlugin()],
     bundle: true,
     assetNames: 'assets/[name]-[hash]',
