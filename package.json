@@ -2,6 +2,7 @@
   "name": "repro",
   "version": "1.0.0",
   "scripts": {
+    "test": "node esbuild.mjs && node dist/index.js",
     "build": "node esbuild.mjs"
   },
   "license": "UNLICENSED",
